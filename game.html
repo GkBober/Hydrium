@@ -107,7 +107,7 @@
       top: 100%;
     }
 
-    /* Box backgrounds */
+   
     .terraria { background-image: url('https://assets1.ignimgs.com/2019/01/17/terraria---button-1547745886957.jpg'); }
     .mds { background-image: url('https://m.media-amazon.com/images/M/MV5BOWE1Y2RmOGQtNmEyMy00MDQ2LThlMDMtOGE2MGU0MTJiNzY3XkEyXkFqcGc@._V1_.jpg'); }
     .beamng { background-image: url('https://cdn-products.eneba.com/resized-products/EDf5URdyBQXPkHs2Frdr-UicraSenMbtZhXBlNzbWL0_350x200_3x-0.jpeg'); }
@@ -119,7 +119,7 @@
     .mkx { background-image: url('https://i.gadgets360cdn.com/products/large/MV5BNTM4OGFmZGEtNDVmMS00NjJiLTk5M2EtODg1NjAyY2QxNTRjXkEyXkFqcGdeQXVyMTI0MzA4NTgw.-V1-FMjpg-UX1000-1000x1500-1669182523.jpg'); }
     .mt { background-image: url('https://images.launchbox-app.com/78a449ca-8478-46a3-b6d1-86db939024e4.jpg'); }
 
-    /* Modal Styles */
+    
     .modal {
       position: fixed;
       top: 0; left: 0;
@@ -232,7 +232,7 @@
     </div>
   </div>
 
-  <!-- Modal -->
+  
   <div id="modal" class="modal hidden">
     <div class="modal-content">
       <span class="close-btn" id="close-btn">&times;</span>
@@ -242,7 +242,7 @@
   </div>
 
   <script>
-    // Dane do każdego pola: tekst modala i link do pobrania
+    
     const gameData = {
       "Terraria": {
         text: "Hit download for Terraria",
@@ -306,14 +306,14 @@
       modal.classList.add('hidden');
     });
 
-    // Zamknij modal po kliknięciu poza modal-content
+    
     modal.addEventListener('click', (e) => {
       if (e.target === modal) {
         modal.classList.add('hidden');
       }
     });
 
-    // Opcjonalnie: ESC do zamknięcia modala
+    
     document.addEventListener('keydown', (e) => {
       if (e.key === 'Escape' && !modal.classList.contains('hidden')) {
         modal.classList.add('hidden');
